@@ -16,12 +16,10 @@ function timeContent() {
     let date = new Date();
     let hour = date.getHours();
     let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
     hour = hour < 10 ? '0' + hour : hour;
     minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
     document.getElementById('time').innerHTML = '  <h3>Hora:</h3> <h1 id="insertTime"></h1>';
-    document.getElementById('insertTime').innerHTML = hour + ':' + minutes + ':' + seconds;
+    document.getElementById('insertTime').innerHTML = hour + ':' + minutes;
 }
 
 function dateContent() {
